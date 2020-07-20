@@ -1,0 +1,566 @@
+/*Css para elaboração do Projeto Final do Senai - Curso de Programação Web*/
+
+/*zerando as margins do site*/
+*{
+	background-size: 100%;
+	float: left;
+	height: 20px;
+	width: 50%;
+	
+	 
+}
+/*contém todo conteúdo do site*/
+#container{
+	width: 1024;
+	min-width: 1024px;
+	height: 100%;
+}
+
+/*linha superior do site*/
+#container #linha {
+	background-color: #006600;
+	float: left;
+	height: 10px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+/*menu superior do site*/
+#container #menuSuperior {
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	margin: 0px;
+	background-color: #F4F4F4;
+}
+/*ul contendo o menu superior*/
+#container .menuSuperior{
+	width: 45%;
+	height: 60px;
+	float: left;
+	margin-left: 20px;
+	text-align: right;
+	margin-top: 5px;
+}
+/*formantdo ul e li do menu superior*/
+.menuSuperior li{
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	list-style-type: none;
+	float: left;
+	display: inline;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	color: #003;
+	padding-top: 10px;
+	margin-left:15px;
+		
+	
+		
+}
+/*mouse sobre no li*/
+.menuSuperior li:hover,.menuSuperior li a:hover{
+	background: url(../imagens/menu.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	text-decoration: none;
+}
+/*formatando os links do menu superior*/
+.menuSuperior li a{
+	text-decoration: none;
+	color:#030;
+	text-transform:uppercase;
+	
+}
+
+/*formatndo o ul li selected*/
+#container #menuSuperior .menuSuperior .selected {
+	background-image: url(../imagens/menu.png);
+	background-repeat: no-repeat;
+	color:#FFF;
+}
+
+/*cabeçalho do site*/
+header{
+	width: 100%;
+	height: 465px;
+	border: #333 1px dashed;
+	float: left;
+	border: #F3F3F3 3px solid;
+}
+/*slider dentro do header do site*/
+#slider{
+	width: 970px;
+	height: 460px;
+	padding: 10px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container #menuSuperior #logar {
+	float: left;
+	height: 50px;
+	width: 430px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #90CD66;
+	padding-top: 13px;
+	text-align: left;
+	margin-top: 5px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #099;
+	border-bottom-color: #099;
+	border-left-color: #099;
+	
+}
+#container #menuSuperior #logar #btn {
+	background-color: #060;
+	border: none;
+	height: 25px;
+	width: 50px;
+	margin-left: 5px;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-align: center;
+}
+#logar label{
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	margin-left: 5px;
+}
+#container #menuSuperior #logar #usuario,#container #menuSuperior #logar #senha {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: none;
+	height: 20px;
+	padding-top: 3px;
+	padding-left: 3px;
+	
+}
+#container header #slider #cadastrar {
+	float: right;
+	height: 395px;
+	width: 389px;
+	border: 1px solid #099;
+	padding: 5px;
+	margin-top: 30px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+#container header #slider #cadastrar #nome {
+	float: left;
+	height: 37px;
+	width: 150px;
+	margin-top: 35px;
+	margin-left: 17px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #900;
+	text-align: left;
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container header #slider #cadastrar p .contrato {
+	font-family:Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+	margin-top: 50px;
+}
+#container header #slider #cadastrar #sobrenome {
+	float: right;
+	height: 37px;
+	width: 193px;
+	margin-right: 15px;
+	margin-top: 35px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar #email {
+	float: left;
+	height: 37px;
+	width: 357px;
+	margin-top: 28px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	margin-left: 16px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar #password {
+	float: left;
+	height: 37px;
+	width: 357px;
+	margin-left: 17px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar .btn {
+	float: left;
+	height: 37px;
+	width: 357px;
+	margin-top: 22px;
+	margin-right: 22px;
+	margin-bottom: 22px;
+	margin-left: 16px;
+	background-color: #FF9900;
+	border: none;
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#container header #slider #cadastrar p {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container header #slider #pessoas {
+	float: left;
+	height: 390px;
+	width: 453px;
+	margin: 30px;
+}
+#container header #slider #pessoas p {
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	color: #069;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	text-align: center;
+}
+#container #menuSuperior #logar a {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: right;
+	width: 150px;
+	margin-top: 0px;
+	margin-right: 100px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	float: right;
+}
+
+#container #menuSuperior #logar a img {
+	float: right;
+	height: 52px;
+	width: 52px;
+}
+#container #menuSuperior .socias {
+	float: left;
+	height: 52px;
+	width: 108px;
+	
+}
+#container #menuinterior {
+	float: left;
+	height: 60px;
+	width: 100%;
+	background-color: #069;
+	padding-top: 15px;
+	display: block;
+	clear: both;
+	margin-top: 50px;
+}
+#container #menuinterior #buscaemprego label {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	width: 245px;
+	height: 30px;
+	float: left;
+	padding: 5px;
+	margin-top: 2px;
+	margin-left: 80px;
+}
+#container #menuinterior #buscaemprego #emprego {
+	padding: 5px;
+	float: left;
+	height: 25px;
+	width: 250px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#container #menuinterior #buscaemprego #uf {
+	padding: 5px;
+	float: left;
+	height: 35px;
+	width: 200px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+#container #menuinterior #buscaemprego {
+	float: left;
+	height: 45px;
+	width: 1024px;
+	display: block;
+	clear: both;
+}
+#container #resultado {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	width: 80%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height: 400px;
+	display: block;
+	clear: both;
+}
+#container #menuinterior #buscaemprego #acao {
+	background-image: url(../imagens/btnBuscar.JPG);
+	background-repeat: no-repeat;
+	height: 37px;
+	width: 156px;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+footer{
+	width: 100%;
+	height: 200px;
+	float: left;
+	clear: both;
+	display: block;
+	background: #000;
+}#container #videos {
+	height: 290px;
+	width: 903px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	display: block;
+	clear: both;
+}
+#container #videos p {
+	font-family: Helvetica, sans-serif;
+	color: #069;
+	font-size: 24px;
+	float: left;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+}
+#container #resultado p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #333;
+	width: 98%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+#container #resultado h2 {
+	height: 25px;
+	width: 98%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container header #slider #pessoas #tablepessoas {
+	height: 300px;
+	width: 452px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#container header #slider #formularioCadastro {
+	height: 395px;
+	width: 900px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos {
+	float: left;
+	height: 390px;
+	width: 99%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#cadastroCandidatos #seunome,#cadastroCandidatos #seuendereco,#cadastroCandidatos #seuemail,#cadastroCandidatos #seunasc,
+#cadastroCandidatos #seuestadocivil,#cadastroCandidatos #seucpf,#cadastroCandidatos #orgaoemissor,#cadastroCandidatos #suarua,
+#cadastroCandidatos #seubairro, #cadastroCandidatos #seuestado,#cadastroCandidatos #seutelefone,#cadastroCandidatos #seucep,
+#cadastroCandidatos #suacidade,#cadastroCandidatos fieldset #seuusuario,#cadastroCandidatos fieldset #suasenha{
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	float: left;
+	height: 25px;
+	width: 210px;
+	margin: 20px;
+	padding: 3px;
+}
+#cadastroCandidatos #btncadastrarseusdados,#cadastroCandidatos #btnlimparseusdados {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	background-color: #00CC00;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 200px;
+	height: 30px;
+	float: left;
+	margin: 20px;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos fieldset legend {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #09F;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos fieldset {
+	height: 380px;
+	width: 100%;
+	float: left;
+}
+#formularioCadastroCurriculo #CadastroCurriculo {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	height: 900px;
+	width: 900px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset #objprofissional {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	width: 400px;
+	float: left;
+	height: 100px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset #curosextra {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	height: 100px;
+	width: 350px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset #expprofi {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	height: 100px;
+	width: 350px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+ #formularioCadastroCurriculo #CadastroCurriculo fieldset #formacademy {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+	height: 100px;
+	width: 400px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+ #formularioCadastroCurriculo {
+	height: 1000px;
+	width: 920px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	display: block;
+	clear: both;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset select {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+	width: 300px;
+	clear: both;
+	height: 25px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+ #formularioCadastroCurriculo #CadastroCurriculo fieldset #telefone {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 20px;
+	float: left;
+	height: 25px;
+	width: 200px;
+	clear: both;
+}
+#container #menuSuperior .logar {
+	float: right;
+	height: 50px;
+	width: 450px;
+	margin-right: 170px;
+	margin-top: -50px;
+}
+#container #menuSuperior .logar .email {
+	float: left;
+	height: 25px;
+	width: 180px;
+}
+#container #menuSuperior .logar .senha {
+	float: left;
+	height: 25px;
+	width: 160px;
+	margin-left: 10px;
+}
+#container #menuSuperior .logar .botao {
+	float: right;
+	height: 25px;
+	width: 60px;
+}

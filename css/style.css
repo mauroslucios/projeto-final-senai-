@@ -1,0 +1,957 @@
+/*Css para elaboração do Projeto Final do Senai - Curso de Programação Web*/
+
+/*zerando as margins do site*/
+*{
+	background-size: 100%;
+	 
+}
+/*contém todo conteúdo do site*/
+#container{
+	width: 100%;
+	min-width: 1024px;
+	height: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+/*linha superior do site*/
+#container #linha {
+	background-color: #006600;
+	float: left;
+	height: 10px;
+	width: 100%;
+}
+/*menu superior do site*/
+#container #menuSuperior {
+	float: left;
+	height: 70px;
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 50px;
+	margin-left: 0px;
+}
+/*ul contendo o menu superior*/
+#container .menuSuperior{
+	width: 100%;
+	height: 60px;
+	float: left;
+	margin-left: 20px;
+	text-align: right;
+	margin-top: 0px;
+}
+/*formantdo ul e li do menu superior*/
+.menuSuperior li{
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	list-style-type: none;
+	float: left;
+	display: inline;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	color: #003;
+	padding-top: 10px;
+	margin-left:15px;
+		
+	
+		
+}
+/*mouse sobre no li*/
+.menuSuperior li:hover,.menuSuperior li a:hover{
+	background: url(../imagens/menu.png);
+	background-repeat: no-repeat;
+	color: #ffffff;
+	text-decoration: none;
+}
+/*formatando os links do menu superior*/
+.menuSuperior li a{
+	text-decoration: none;
+	color:#030;
+	text-transform:uppercase;
+	
+}
+
+/*formatndo o ul li selected*/
+#container #menuSuperior .menuSuperior .selected {
+	background-image: url(../imagens/menu.png);
+	background-repeat: no-repeat;
+	color:#FFF;
+}
+
+/*cabeçalho do site*/
+header{
+	width: 100%;
+	height: 465px;
+	border: #333 1px dashed;
+	float: left;
+	border: #F3F3F3 3px solid;
+}
+/*slider dentro do header do site*/
+#slider{
+	width: 970px;
+	height: 460px;
+	padding: 10px;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container #menuSuperior #logar {
+	float: left;
+	height: 50px;
+	width: 430px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #90CD66;
+	padding-top: 13px;
+	text-align: left;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #099;
+	border-bottom-color: #099;
+	border-left-color: #099;
+	
+}
+#container #menuSuperior #logar #btn {
+	background-color: #060;
+	border: none;
+	height: 25px;
+	width: 50px;
+	margin-left: 5px;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-align: center;
+}
+#logar label{
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	margin-left: 5px;
+}
+#container #menuSuperior #logar #usuario,#container #menuSuperior #logar #senha {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	border: none;
+	height: 20px;
+	padding-top: 3px;
+	padding-left: 3px;
+	
+}
+#container header #slider #cadastrar,#container  #cadastrar {
+	float: right;
+	height: 415px;
+	width: 389px;
+	border: 1px solid #099;
+	padding: 5px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+#container header #slider #cadastrar #nome,#container  #cadastrar #nome {
+	float: left;
+	height: 37px;
+	width: 150px;
+	margin-top: 35px;
+	margin-left: 17px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar h2,#container #cadastrar h2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	color: #900;
+	text-align: left;
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container header #slider #cadastrar p .contrato,#container #cadastrar p .contrato {
+	font-family:Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333;
+	margin-top: 50px;
+}
+#container header #slider #cadastrar #sobrenome,#container  #cadastrar #sobrenome {
+	float: right;
+	height: 37px;
+	width: 193px;
+	margin-right: 15px;
+	margin-top: 35px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar #email,#container #cadastrar #email {
+	float: left;
+	height: 37px;
+	width: 357px;
+	margin-top: 28px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	margin-left: 16px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar #password,#container #cadastrar #password {
+ 
+	float: left;
+	height: 37px;
+	width: 357px;
+	margin-left: 17px;
+	border: 1px solid #099;
+	padding-left:2px;
+}
+#container header #slider #cadastrar .btn,#container #cadastrar .btn {
+	float: left;
+	height: 37px;
+	width: 357px;
+	margin-top: 22px;
+	margin-right: 22px;
+	margin-bottom: 22px;
+	margin-left: 16px;
+	background-color: #FF9900;
+	border: none;
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+#container header #slider #cadastrar p,#container #cadastrar p {
+	width: 90%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	float: left;
+}
+#container header #slider #pessoas,#container #pessoas {
+	float: left;
+	height: 390px;
+	width: 453px;
+	margin: 30px;
+}
+#container header #slider #pessoas p,#container #pessoas p  {
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	color: #069;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	text-align: center;
+}
+#container #menuSuperior #logar a {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+	text-align: right;
+	width: 150px;
+	margin-top: 0px;
+	margin-right: 100px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	float: right;
+}
+
+#container #menuSuperior #logar a img {
+	float: right;
+	height: 52px;
+	width: 52px;
+}
+#container #menuSuperior .socias {
+	float: left;
+	height: 52px;
+	width: 108px;
+	
+}
+#container #menuinterior {
+	float: left;
+	height: 60px;
+	width: 100%;
+	background-color: #069;
+	padding-top: 15px;
+	display: block;
+	clear: both;
+	margin-top: 25px;
+}
+#container #menuinterior #buscaemprego label {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	width: 245px;
+	height: 30px;
+	float: left;
+	padding: 5px;
+	margin-top: 2px;
+	margin-left: 0px;
+}
+#container #menuinterior #buscaemprego #emprego {
+	padding: 5px;
+	float: left;
+	height: 25px;
+	width: 230px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#container #menuinterior #buscaemprego #uf {
+	padding: 5px;
+	float: left;
+	height: 35px;
+	width: 200px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+#container #menuinterior #buscaemprego {
+	height: 45px;
+	width: 650px;
+	display: block;
+	clear: both;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding: 5px;
+}
+#container #resultado {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	width: 80%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	height: 100%;
+	display: block;
+	clear: both;
+	padding: 10px;
+	overflow: auto;
+}
+#container #menuinterior #buscaemprego #acao {
+	background-image: url(../imagens/btnBuscar.JPG);
+	background-repeat: no-repeat;
+	height: 37px;
+	width: 156px;
+	float: left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+footer{
+	width: 100%;
+	height: 150px;
+	float: left;
+	clear: both;
+	display: block;
+	background-color: #05233D;
+	margin-top: 75px;
+}#container #videos {
+	height: 300px;
+	width: 950px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	display: block;
+	clear: both;
+}
+#container #videos p {
+	font-family: Helvetica, sans-serif;
+	color: #069;
+	font-size: 24px;
+	float: left;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+#container #resultado p {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #333;
+	width: 98%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+#container #resultado h2 {
+	height: 25px;
+	width: 98%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container header #slider #pessoas #tablepessoas ,#container  #tablepessoas{
+	height: 300px;
+	width: 452px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#container header #slider #formularioCadastro {
+	height: 395px;
+	width: 900px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos {
+	float: left;
+	height: 375px;
+	width: 99%;
+	margin-top: -5px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#cadastroCandidatos #seunome,#cadastroCandidatos #seuendereco,#cadastroCandidatos #seuemail,#cadastroCandidatos #seunasc,
+#cadastroCandidatos #seuestadocivil,#cadastroCandidatos #seucpf,#cadastroCandidatos #orgaoemissor,#cadastroCandidatos #suarua,
+#cadastroCandidatos #seubairro, #cadastroCandidatos #seuestado,#cadastroCandidatos #seutelefone,#cadastroCandidatos #seucep,
+#cadastroCandidatos #suacidade,#cadastroCandidatos fieldset #seuusuario,#cadastroCandidatos fieldset #suasenha{
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	float: left;
+	height: 25px;
+	width: 210px;
+	padding: 3px;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#cadastroCandidatos #btncadastrarseusdados,#cadastroCandidatos #btnlimparseusdados {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	background-color: #00CC00;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 200px;
+	height: 30px;
+	float: left;
+	margin: 20px;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos fieldset legend {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #09F;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos fieldset {
+	height: 370px;
+	width: 100%;
+	float: left;
+}
+#formularioCadastroCurriculo #CadastroCurriculo {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	height: 100%;
+	width: 950px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-top: 40px;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset #objprofissional {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	width: 400px;
+	float: left;
+	height: 100px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset #curosextra {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	height: 100px;
+	width: 350px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset #expprofi {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+	height: 100px;
+	width: 400px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+ #formularioCadastroCurriculo #CadastroCurriculo fieldset #formacademy {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: right;
+	height: 100px;
+	width: 350px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+ #formularioCadastroCurriculo {
+	height: 100%;
+	width: 950px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	margin-top: 20px;
+}
+#formularioCadastroCurriculo #CadastroCurriculo fieldset select {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+	width: 250px;
+	clear: both;
+	height: 25px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 30px;
+}
+ #formularioCadastroCurriculo #CadastroCurriculo fieldset #telefone {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 20px;
+	float: left;
+	height: 25px;
+	width: 200px;
+	clear: both;
+}
+#container #menuSuperior .logar {
+	float: right;
+	width: 50%;
+	height: 50px;
+}
+#container #menuSuperior .logar .titulo {
+	float: left;
+	width: 34%;
+	text-align: left;
+}
+#container #menuSuperior .logar .email {
+	float: left;
+	height: 25px;
+	width: 200px;
+	margin-right: 10px;
+	-webkit-border-radius:3px;
+	-webkit-box-shadow:#666 2px;
+	-moz-border-radius:3px;
+	-moz-box-shadow:#666 2px;
+	border-radius:3px;
+	box-shadow:#666 2px;
+}
+#container #menuSuperior .logar .senha {
+	float: left;
+	height: 25px;
+	width: 200px;
+	margin-left: 12px;
+	-webkit-border-radius:3px;
+	-webkit-box-shadow:#666 2px;
+	-moz-border-radius:3px;
+	-moz-box-shadow:#666 2px;
+	border-radius:3px;
+	box-shadow:#666 2px;
+}
+#container #menuSuperior .logar .botao {
+	float: left;
+	height: 25px;
+	width: 60px;
+	margin-left: 20px;
+	background-color: #660;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	-webkit-border-radius:3px;
+	-webkit-box-shadow:#666 2px;
+	-moz-border-radius:3px;
+}
+#container #menuSuperior .logar .titulo1 {
+	float: left;
+	height: 25px;
+	width: 35%;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo fieldset {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #069;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo fieldset #digaSobre {
+	height: 100px;
+	width: 400px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	float: left;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo fieldset #sobrevoce {
+	float: left;
+	height: 150px;
+	width: 900px;
+	margin-top: 5px;
+	display: block;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo fieldset #sobrevoce #selects {
+	float: right;
+	height: 145px;
+	width: 250px;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo fieldset #sobrevoce #idiomas {
+	float: left;
+	height: 25px;
+	width: 250px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo fieldset #sobrevoce #grambel {
+	float: left;
+	height: 25px;
+	width: 250px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #999;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo fieldset #sobrevoce .profissoes {
+	float: right;
+	height: 25px;
+	width: 250px;
+	margin-top: -1px;
+	margin-right: 100px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#container #resultado #resultadoEmpregos {
+	font-family: Helvetica, sans-serif;
+	height: 100%;
+	width: 900px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	color: #333;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos fieldset #descricao {
+	float: right;
+	height: 200px;
+	width: 300px;
+	margin: 20px;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos fieldset #cep {
+	margin: 20px;
+	float: left;
+	height: 25px;
+	width: 200px;
+	color:#333;
+	padding-left:2px;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos fieldset #salario {
+	margin: 20px;
+	float: right;
+	height: 25px;
+	width: 250px;
+	padding-left: 5px;
+	color: #333;
+}
+#container #resultado .anunciantes {
+	float: left;
+	height: 80px;
+	width: 80px;
+	margin-top: 20px;
+	margin-right: 18px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#container  #anunciantesSite {
+	height: 15px;
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+	padding: 10px;
+}
+#container #resultado #noticias {
+	float: left;
+	height: 250px;
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-color: #FFF;
+}
+#container .linksFooter {
+	float: left;
+	height: 20px;
+	width: 200px;
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
+	color: #F90;
+	text-align: center;
+	background-color: #05233D;
+	margin-left: 210px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 2px;
+}
+#container #lembrasenha {
+	height: 400px;
+	width: 250px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container fieldset #email {
+	margin: 10px;
+	float: left;
+	height: 25px;
+	width: 200px;
+}
+#container fieldset #sobrenome {
+	margin: 10px;
+	float: left;
+	height: 25px;
+	width: 200px;
+}
+#container fieldset #email {
+	margin: 10px;
+	float: left;
+	height: 25px;
+	width: 200px;
+}
+#container fieldset {
+	float: left;
+	height: 250px;
+	width: 220px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container fieldset input {
+	background-color: #61BC45;
+	border: 1px solid #004E7C;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo #curriculo {
+	height: 100%;
+	width: 900px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+#container #formularioCadastroCurriculo #CadastroCurriculo #curriculo #sobrevoce .telefone {
+	margin: 30px;
+	float: right;
+	height: 30px;
+	width: 250px;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo #curriculo #sobrevoce .deficiencia textarea {
+	float: left;
+	height: 100px;
+	width: 400px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo #curriculo #sobrevoce #btncadastrarseusdados {
+	height: 30px;
+	width: 150px;
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 300px;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo #curriculo #sobrevoce #btnlimparseusdados {
+	float: left;
+	height: 30px;
+	width: 150px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo #curriculo #sobrevoce .informacoesComplementares textarea {
+	margin: 20px;
+	float: right;
+	height: 100px;
+	width: 350px;
+}
+#termo {
+	font-family: Tahoma, Geneva, sans-serif;
+	height: 100%;
+	width: 750px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-color: #FFF;
+	padding: 10px;
+}
+#termo p {
+	text-align: justify;
+}
+#termo h1 {
+	color: #F60;
+}
+#termo h3 {
+	color: #666;
+}
+#container header #slider #formularioCadastro #cadastroCandidatos a {
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	color: #F00;
+	display: block;
+	height: 25px;
+	width: 100%;
+	text-decoration: none;
+	font-weight: bold;
+}
+#container #menuinterior h2 {
+	font-family: Helvetica, sans-serif;
+	color: #FFF;
+	text-align: center;
+	margin: 0px;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+#container #formularioCadastroCurriculo #CadastroCurriculo #curriculo #sobrevoce #telefone {
+	background-color: #FFF;
+	color: #000;
+	float: right;
+	height: 25px;
+	width: 200px;
+}
+#container header #slider #formularioCadastro #Contato fieldset {
+	height: 100%;
+	width: 400px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+}
+#container header #slider #formularioCadastro #Contato {
+	height: 100%;
+	width: 500px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-left: auto;
+}
+#container header #slider #formularioCadastro #Contato #tituloform{
+	display:block;
+}#container header #slider #formularioCadastro #Contato fieldset input {
+	height: 35px;
+	width: 80%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#container footer .linksFooter .termos {
+	text-decoration: none;
+	color: #F90;
+}
+#container header #slider #formularioCadastro #Contato fieldset #limpar {
+	margin: 5px;
+	float: right;
+	width: 40%;
+	height: 25px;
+}
+#container header #slider #formularioCadastro #Contato fieldset #submit {
+	margin: 5px;
+	float: left;
+	width: 40%;
+	height: 25px;
+}
+#container header #slider #formularioCadastro h2 {
+	font-family: Helvetica, sans-serif;
+	color: #333;
+	display: block;
+	height: 25px;
+	width: 100%;
+	float: left;
+}
+#container header #slider #pessoas #termos {
+	float: left;
+	height: 400px;
+	width: 452px;
+	border: 1px solid #099;
+	box-shadow: #333 5px;
+	-webkit-box-shadow: #333 5px;
+	-moz-box-shadow: #333 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#container header #slider #pessoas #termos .uso {
+	text-align: justify;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	color: #006;
+}
+#container header #slider #pessoas #termos .anuncios {
+	height: 80px;
+	width: 80px;
+	padding: 15px;
+	float: left;
+}
+#container header #slider #cadastrar .ola {
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	text-align: justify;
+}
